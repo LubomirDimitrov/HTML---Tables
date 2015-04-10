@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>HTML Form</title>
+    <style>
+        #mn, #email, #school {
+            margin-bottom: 2px;
+        }
+
+        input {
+            border-radius: 3px;
+        }
+    </style>
+
+</head>
+<body>
+    <form method="post">
+        <label for="mn">Member name :</label>
+        <input type="text" required id="mn" tabindex="1" /><b>*req</b>
+        <br />
+        <label for="email">Email :</label>
+        <input type="email" required id="email" pattern="[^ @]*@[^ @]*" tabindex="2" /><b>*req</b>
+        <br />
+        <label for="school">School :</label>
+        <input type="text" required id="school" tabindex="3" /><b>*req</b>
+        <br />
+        <input type="button" name="btn" class="btn-style" value="submit" />
+    </form>
+</body>
+</html>
